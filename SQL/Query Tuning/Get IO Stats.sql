@@ -1,0 +1,7 @@
+SET STATISTICS IO ON;
+GOTO
+
+SELECT *
+FROM TableName;
+
+GO
