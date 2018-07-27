@@ -1,3 +1,7 @@
 Pull out column names from SQL Table definition
 
+.*\[|\].*
+
+Match all column names in a SQL table definition
+
 (?<=\[).*(?=\])
