@@ -1,0 +1,3 @@
+Pull out column names from SQL Table definition
+
+(?<=\[).*(?=\])
