@@ -1,0 +1,9 @@
+SELECT hist.step_number
+  , hist.range_high_key
+  , hist.range_rows
+  , hist.equal_rows
+  , hist.distinct_range_rows
+  , hist.average_range_rows
+FROM sys.stats AS s
+CROSS APPLY sys.dm_db_stats_histogram(s.[object_id], s.stats_id) AS hist
+WHERE s.[name] = N'IX_MyIndex';
